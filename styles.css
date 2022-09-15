@@ -1,0 +1,162 @@
+:root {
+  /* Headers */
+  --header-background: #313c4e;
+  --header-textColor: #ffffff;
+  --header-role-color: #439399;
+
+  /* Body */
+  --body-role-color: #439399;
+  --body-desc-color: #000000;
+  --body-circle-color: #313c4e;
+}
+
+.main {
+  background-image: url(./0_e131wyMA62ZCN188.png);
+  object-fit: cover;
+  width: 100vw;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  margin: 1% 25%;
+  /* height: 95vh; */
+  background-color: var(--header-textColor);
+  box-shadow: 6px 6px 25px 10px black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--header-background);
+  color: var(--header-textColor);
+  margin: 0;
+  padding: 1% 5%;
+  border-radius: 5px;
+}
+
+.profilePic {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px solid var(--header-role-color);
+  align-self: center;
+}
+
+.desc > h5 {
+  color: var(--header-role-color);
+}
+
+.firstSec {
+  padding: 3% 6%;
+}
+
+.secondSec {
+  padding: 3% 6%;
+}
+
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.firstSec > section > h4 {
+  color: var(--header-role-color);
+}
+
+.rule {
+  margin-top: 0;
+  color: var(--header-role-color);
+  width: 22ch;
+}
+
+hr:not([size]) {
+  height: 3px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--body-role-color);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul li {
+  font-weight: 600;
+  font-size: 1.2ch;
+}
+
+.body-header {
+  color: var(--header-role-color);
+}
+
+.language-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.english,
+.hindi,
+.bengali {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--body-role-color);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.english-fill,
+.hindi-fill,
+.bengali-fill {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--body-role-color);
+  background-color: var(--body-role-color);
+  border-radius: 50%;
+  margin: 4px auto;
+}
+
+.skills-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skill {
+  font-size: smaller;
+  font-weight: bolder;
+}
+
+.scale {
+  display: flex;
+  flex-direction: column;
+  gap: 1.28rem;
+}
+
+progress {
+  color: var(--body-role-color);
+}
